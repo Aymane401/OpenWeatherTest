@@ -52,7 +52,9 @@ namespace OpenWeatherAPI
         {
 
             if (ApiKey == null || ApiKey == "")  throw new ArgumentException("ApiKey est vide ou null");
-          
+
+
+            if (ApiHelper.ApiClient == null) throw new ArgumentException("client http n'est pas initialisé");
 
             EndPoint = $"/onecall?";
 
@@ -80,6 +82,8 @@ namespace OpenWeatherAPI
         {
 
             if (ApiKey == null || ApiKey == "")  throw new ArgumentException("ApiKey est vide ou null");
+
+            if (ApiHelper.ApiClient == null) throw new ArgumentException("client http n'est pas initialisé");
             EndPoint = $"/weather?";
 
             /// Src : https://stackoverflow.com/a/14517976/503842
