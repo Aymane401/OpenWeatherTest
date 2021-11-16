@@ -13,8 +13,6 @@ namespace OpenWeatherAPITests
             public async Task GetOneCallAsync_IfApiKeyEmptyOrNull_ThrowArgumentException()
             {
 
-
-
                 OpenWeatherProcessor owp = OpenWeatherProcessor.Instance;
 
 
