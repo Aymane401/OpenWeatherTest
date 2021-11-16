@@ -32,6 +32,7 @@ namespace OpenWeatherAPITests
         }
 
 
+
         [Fact]
         public async Task GetOneCallAsync_IfApiHelperIsNotInitialized_ThrowArgumentException()
         {
