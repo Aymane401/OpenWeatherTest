@@ -31,5 +31,18 @@ namespace OpenWeatherAPITests
             await Assert.ThrowsAsync<ArgumentException>(owp.GetCurrentWeatherAsync);
         }
 
+
+        [Fact]
+        public async Task GetOneCallAsync_IfApiHelperIsNotInitialized_ThrowArgumentException()
+        {
+
+
+            OpenWeatherProcessor owp = OpenWeatherProcessor.Instance;
+
+
+
+            await Assert.ThrowsAsync<ArgumentException>(owp.GetOneCallAsync);
+        }
+
     }
 }
