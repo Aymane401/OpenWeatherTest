@@ -4,6 +4,19 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <StartupObject>WeatherApp.App</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenWeatherAPITests\OpenWeatherAPITests.csproj" />
+    <ProjectReference Include="..\OpenWeatherAPI\OpenWeatherAPI.csproj" />
+    <ProjectReference Include="..\OWApi_QuickTest\OWApi_QuickTest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appesstings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

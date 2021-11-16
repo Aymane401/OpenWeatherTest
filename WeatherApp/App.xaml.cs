@@ -9,5 +9,11 @@ namespace WeatherApp
     /// </summary>
     public partial class App : Application
     {
+
+        public App()
+        {
+
+          string cle = AppConfiguration.GetValue("apikey");
+        }
     }
 }
